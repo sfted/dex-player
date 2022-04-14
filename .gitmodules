@@ -1,0 +1,3 @@
+[submodule "ymusic-api"]
+	path = ymusic-api
+	url = https://github.com/sfted/ymusic-api
