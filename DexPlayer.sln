@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DexPlayer", "dex-player\DexPlayer.csproj", "{76B5E20B-C3A6-4C7B-87D2-3458538481DF}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yandex.Music.Api", "ymusic-api\Yandex.Music.Api\Yandex.Music.Api.csproj", "{3EE00C97-479A-48ED-BC33-523C896BDA06}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,22 @@ Global
 		{76B5E20B-C3A6-4C7B-87D2-3458538481DF}.Release|x86.ActiveCfg = Release|x86
 		{76B5E20B-C3A6-4C7B-87D2-3458538481DF}.Release|x86.Build.0 = Release|x86
 		{76B5E20B-C3A6-4C7B-87D2-3458538481DF}.Release|x86.Deploy.0 = Release|x86
+		{3EE00C97-479A-48ED-BC33-523C896BDA06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EE00C97-479A-48ED-BC33-523C896BDA06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EE00C97-479A-48ED-BC33-523C896BDA06}.Debug|arm64.ActiveCfg = Debug|Any CPU
+		{3EE00C97-479A-48ED-BC33-523C896BDA06}.Debug|arm64.Build.0 = Debug|Any CPU
+		{3EE00C97-479A-48ED-BC33-523C896BDA06}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3EE00C97-479A-48ED-BC33-523C896BDA06}.Debug|x64.Build.0 = Debug|Any CPU
+		{3EE00C97-479A-48ED-BC33-523C896BDA06}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3EE00C97-479A-48ED-BC33-523C896BDA06}.Debug|x86.Build.0 = Debug|Any CPU
+		{3EE00C97-479A-48ED-BC33-523C896BDA06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EE00C97-479A-48ED-BC33-523C896BDA06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EE00C97-479A-48ED-BC33-523C896BDA06}.Release|arm64.ActiveCfg = Release|Any CPU
+		{3EE00C97-479A-48ED-BC33-523C896BDA06}.Release|arm64.Build.0 = Release|Any CPU
+		{3EE00C97-479A-48ED-BC33-523C896BDA06}.Release|x64.ActiveCfg = Release|Any CPU
+		{3EE00C97-479A-48ED-BC33-523C896BDA06}.Release|x64.Build.0 = Release|Any CPU
+		{3EE00C97-479A-48ED-BC33-523C896BDA06}.Release|x86.ActiveCfg = Release|Any CPU
+		{3EE00C97-479A-48ED-BC33-523C896BDA06}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

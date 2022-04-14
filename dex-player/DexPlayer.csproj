@@ -31,6 +31,9 @@
     <ProjectCapability Include="Msix" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ymusic-api\Yandex.Music.Api\Yandex.Music.Api.csproj" />
+  </ItemGroup>
+  <ItemGroup>
     <Page Update="Views\UserControls\LoginUserControl.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
