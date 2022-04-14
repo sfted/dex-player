@@ -37,7 +37,7 @@ public partial class App : Application
         services.AddSingleton<IYandexService, YandexService>();
 
         services.AddTransient<IMainWindowVM, MainWindowVM>();
-        services.AddTransient<ICollectionVM, CollectionVM>();
+        services.AddTransient<ILibraryVM, LibraryVM>();
 
         return services.BuildServiceProvider();
     }

@@ -129,7 +129,7 @@
                     Content="Коллекция"
                     FontFamily="{StaticResource ContentControlThemeFontFamily}"
                     FontSize="12"
-                    Tag="{x:Bind values:Pages.COLLECTION}">
+                    Tag="{x:Bind values:Pages.LIBRARY}">
                     <NavigationViewItem.Icon>
                         <FontIcon
                             Glyph="{x:Bind values:MaterialIcons.LIBRARY_MUSIC}"

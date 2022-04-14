@@ -5,7 +5,7 @@ using DexPlayer.Services;
 using System.Diagnostics;
 using System.Linq;
 
-internal interface ICollectionVM
+internal interface ILibraryVM
 {
     string Username { get; }
     Command OpenTracksCommand { get; }
@@ -15,9 +15,9 @@ internal interface ICollectionVM
     Command OpenPodcastsCommand { get; }
 }
 
-internal class CollectionVM : ViewModelBase, ICollectionVM
+internal class LibraryVM : ViewModelBase, ILibraryVM
 {
-    public CollectionVM(
+    public LibraryVM(
         IYandexService yandexService,
         INavigationService navigationService)
     {

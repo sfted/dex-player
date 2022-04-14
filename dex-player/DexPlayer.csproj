@@ -13,6 +13,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Views\Pages\ExceptionUserControl.xaml" />
+    <None Remove="Views\Pages\LibraryTracksPage.xaml" />
     <None Remove="Views\UserControls\LoginUserControl.xaml" />
   </ItemGroup>
 
@@ -47,13 +48,21 @@
     <Page Update="App.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Update="Views\Pages\CollectionPage.xaml">
+    <Page Update="Views\Pages\LibraryPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Update="Views\Pages\NotFoundPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Update="Views\Windows\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\Pages\LibraryTracksPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>

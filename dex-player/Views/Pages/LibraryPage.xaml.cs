@@ -5,14 +5,14 @@ using DexPlayer.ViewModels.Views.Pages;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.UI.Xaml.Controls;
 
-internal sealed partial class CollectionPage : Page, IViewModel<ICollectionVM>
+internal sealed partial class LibraryPage : Page, IViewModel<ILibraryVM>
 {
-    public CollectionPage()
+    public LibraryPage()
     {
-        ViewModel = App.Current.Services.GetService<ICollectionVM>();
+        ViewModel = App.Current.Services.GetService<ILibraryVM>();
 
         InitializeComponent();
     }
 
-    public ICollectionVM ViewModel { get; set; }
+    public ILibraryVM ViewModel { get; set; }
 }

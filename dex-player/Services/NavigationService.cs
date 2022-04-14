@@ -65,7 +65,7 @@ internal class NavigationService : INavigationService
     public Type ResolvePageType(string pageId) =>
         pageId switch
         {
-            Pages.COLLECTION => typeof(CollectionPage),
+            Pages.LIBRARY => typeof(LibraryPage),
             _ => typeof(NotFoundPage)
         };
 

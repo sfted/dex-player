@@ -1,12 +1,12 @@
 ﻿<Page
-    x:Class="DexPlayer.Views.Pages.CollectionPage"
+    x:Class="DexPlayer.Views.Pages.LibraryPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:pages="using:DexPlayer.ViewModels.Views.Pages"
     xmlns:values="using:DexPlayer.Values"
-    d:DataContext="{d:DesignInstance Type=pages:ICollectionVM}"
+    d:DataContext="{d:DesignInstance Type=pages:ILibraryVM}"
     mc:Ignorable="d">
 
     <StackPanel
