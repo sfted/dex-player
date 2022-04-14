@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "DexPlayer (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "DexPlayer (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
