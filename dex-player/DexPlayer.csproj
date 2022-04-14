@@ -18,8 +18,6 @@
 
   <ItemGroup>
 	<PackageReference Include="AdysTech.CredentialManager" Version="2.6.0" />
-	<PackageReference Include="KM.Yandex.Music.Api" Version="1.0.0" />
-	<PackageReference Include="KM.Yandex.Music.Client" Version="1.0.0" />
 	<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
 	<PackageReference Include="Microsoft.WindowsAppSDK" Version="1.0.2" />
 	<PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22000.197" />

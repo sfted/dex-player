@@ -54,6 +54,10 @@ internal class CollectionVM : ViewModelBase, ICollectionVM
     {
         var liked = (await yandexService.GetLikedTracks()).Library.Tracks.Take(10);
 
-        Debug.WriteLine(string.Join(", ", (await yandexService.GetTracks(string.Join(',', liked.Select(l => l.Id)))).Select(t => t.Title)));
+        //Debug.WriteLine(string.Join(", ", (await yandexService.GetTracks(string.Join(',', liked.Select(l => $"{l.Id}:{l.AlbumId}")))).Select(t => t.Title)));
+        Debug.WriteLine(string.Join(", ",
+            (await yandexService.GetTracks(
+                liked.Select(l => $"{l.Id}:{l.AlbumId}").ToArray())
+            ).Select(t => t.Title)));
     }
 }

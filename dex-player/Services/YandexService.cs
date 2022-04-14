@@ -21,7 +21,7 @@ internal interface IYandexService
 
     Task InitializeApi();
     Task<YLibraryTracks> GetLikedTracks();
-    Task<List<YTrack>> GetTracks(string id);
+    Task<List<YTrack>> GetTracks(string[] ids);
 }
 
 internal class YandexService : ViewModelBase, IYandexService
@@ -82,8 +82,8 @@ internal class YandexService : ViewModelBase, IYandexService
     public async Task<YLibraryTracks> GetLikedTracks() =>
         (await api.Library.GetLikedTracksAsync(storage)).Result;
 
-    public async Task<List<YTrack>> GetTracks(string id) =>
-        (await api.Track.GetAsync(storage, id)).Result;
+    public async Task<List<YTrack>> GetTracks(string[] ids) =>
+        (await api.Track.GetAsync(storage, ids)).Result;
 
     private async void ProceedLogin(LoginUserControl control)
     {
