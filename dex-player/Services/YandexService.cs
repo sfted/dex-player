@@ -1,5 +1,6 @@
 ﻿namespace DexPlayer.Services;
 
+using DesktopKit.Services;
 using DexPlayer.Exceptions;
 using DexPlayer.MVVM;
 using DexPlayer.Views.UserControls;
@@ -73,11 +74,19 @@ internal class YandexService : ViewModelBase, IYandexService
                 PrimaryButtonCommandParameter = control
             };
 
-            await navigationService.ShowDialog(dialog);
+            await navigationService.ShowDialogAsync(dialog);
         }
         catch (Exception ex)
         {
-            await navigationService.ShowExceptionDialog(ex);
+            // TODO: вынести куда-нибудь создание этого диалога
+            // TODO: вынести текст куда-нибудь в константы или словарь ресурсов
+            await navigationService.ShowDialogAsync(new ContentDialog()
+            {
+                Title = "Ошибка 😢",
+                Content = new ExceptionUserControl(ex),
+                CloseButtonText = "ок бро",
+                DefaultButton = ContentDialogButton.Close
+            });
         }
     }
 
@@ -108,7 +117,14 @@ internal class YandexService : ViewModelBase, IYandexService
         }
         catch
         {
-            await navigationService.ShowExceptionDialog("Скорее всего, логин или пароль не подходят.");
+            await navigationService.ShowDialogAsync(new ContentDialog()
+            {
+                Title = "Ошибка 😢",
+                Content = "Скорее всего, логин или пароль не подходят.",
+                CloseButtonText = "ок бро",
+                DefaultButton = ContentDialogButton.Close
+            });
+
             await InitializeApi();
         }
     }

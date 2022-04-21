@@ -1,12 +1,12 @@
-﻿namespace DexPlayer.Views.Windows;
-
-using DexPlayer.MVVM.Interfaces;
+﻿using DexPlayer.MVVM.Interfaces;
 using DexPlayer.ViewModels.Views.Windows;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Media.Animation;
 using System;
+
+namespace DexPlayer.Views.Windows;
 
 internal sealed partial class MainWindow : Window, IViewModel<IMainWindowVM>
 {
@@ -40,7 +40,7 @@ internal sealed partial class MainWindow : Window, IViewModel<IMainWindowVM>
         ExtendsContentIntoTitleBar = true;
         SetTitleBar(titleBar);
 
-        ViewModel.NavigationService.SetXamlRoot((sender as Grid).XamlRoot);
+        ViewModel.NavigationService.XamlRoot = (sender as Grid).XamlRoot;
         ViewModel.YandexService.InitializeApi();
     }
 

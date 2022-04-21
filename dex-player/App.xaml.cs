@@ -1,19 +1,23 @@
-﻿namespace DexPlayer;
-
+﻿using DesktopKit.Services;
 using DexPlayer.Services;
+using DexPlayer.Values;
 using DexPlayer.ViewModels.Views.Pages;
 using DexPlayer.ViewModels.Views.Windows;
+using DexPlayer.Views.Pages;
 using DexPlayer.Views.Windows;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.UI.Xaml;
 using System;
+using System.Collections.Generic;
+
+namespace DexPlayer;
 
 public partial class App : Application
 {
     public App()
     {
         Services = ConfigureServices();
-
+        ConfigureNavigation(Services.GetRequiredService<INavigationService>());
         InitializeComponent();
     }
 
@@ -41,5 +45,16 @@ public partial class App : Application
         services.AddTransient<ILibraryTracksVM, LibraryTracksVM>();
 
         return services.BuildServiceProvider();
+    }
+
+    private static void ConfigureNavigation(INavigationService navigation)
+    {
+        navigation.PageTypes = new Dictionary<string, Type>
+        {
+            { Pages.LIBRARY, typeof(LibraryPage) },
+            { Pages.LIBRARY_TRACKS, typeof(LibraryTracksPage) }
+        };
+
+        navigation.NotFoundPage = typeof(NotFoundPage);
     }
 }

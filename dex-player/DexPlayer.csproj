@@ -32,6 +32,7 @@
     <ProjectCapability Include="Msix" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\desktop-kit\DesktopKit.csproj" />
     <ProjectReference Include="..\ymusic-api\Yandex.Music.Api\Yandex.Music.Api.csproj" />
   </ItemGroup>
   <ItemGroup>

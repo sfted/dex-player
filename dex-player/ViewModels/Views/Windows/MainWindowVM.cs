@@ -1,8 +1,8 @@
 ﻿namespace DexPlayer.ViewModels.Views.Windows;
 
+using DesktopKit.Services;
 using DexPlayer.MVVM;
 using DexPlayer.Services;
-using System.Diagnostics;
 
 internal interface IMainWindowVM
 {
