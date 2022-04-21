@@ -1,7 +1,7 @@
 ﻿namespace DexPlayer.ViewModels.Views.Pages;
 
+using DesktopKit.MVVM;
 using DexPlayer.Helpers;
-using DexPlayer.MVVM;
 using DexPlayer.Services;
 using Microsoft.UI.Dispatching;
 using System.Threading.Tasks;

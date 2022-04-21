@@ -1,7 +1,7 @@
 ﻿namespace DexPlayer.ViewModels.Views.Pages;
 
+using DesktopKit.MVVM;
 using DesktopKit.Services;
-using DexPlayer.MVVM;
 using DexPlayer.Services;
 using System.Diagnostics;
 using System.Linq;

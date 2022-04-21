@@ -1,4 +1,6 @@
-﻿using DexPlayer.MVVM.Interfaces;
+﻿namespace DexPlayer.Views.Windows;
+
+using DesktopKit.MVVM.Interfaces;
 using DexPlayer.ViewModels.Views.Windows;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.UI.Xaml;
@@ -6,15 +8,13 @@ using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Media.Animation;
 using System;
 
-namespace DexPlayer.Views.Windows;
-
 internal sealed partial class MainWindow : Window, IViewModel<IMainWindowVM>
 {
     public MainWindow()
     {
         ViewModel = App.Current.Services.GetService<IMainWindowVM>();
 
-        Title = "dex-player";
+        Title = Values.AppInfo.APP_NAME;
         InitializeComponent();
     }
 

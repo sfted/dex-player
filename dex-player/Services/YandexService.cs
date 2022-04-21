@@ -1,14 +1,12 @@
 ﻿namespace DexPlayer.Services;
 
+using DesktopKit.MVVM;
 using DesktopKit.Services;
 using DexPlayer.Exceptions;
-using DexPlayer.MVVM;
 using DexPlayer.Views.UserControls;
 using Microsoft.UI.Xaml.Controls;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
 using System.Threading.Tasks;
 using Yandex.Music.Api;
 using Yandex.Music.Api.Common;

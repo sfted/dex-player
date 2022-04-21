@@ -1,8 +1,8 @@
 ﻿namespace DexPlayer.ViewModels.Entities;
 
+using DesktopKit.MVVM;
+using DesktopKit.MVVM.Interfaces;
 using DexPlayer.Helpers.Abstractions.Interfaces;
-using DexPlayer.MVVM;
-using DexPlayer.MVVM.Interfaces;
 using Yandex.Music.Api.Models.Track;
 
 internal class TrackVM : ViewModelBase, IModel<YTrack>, ISupportsNumeration

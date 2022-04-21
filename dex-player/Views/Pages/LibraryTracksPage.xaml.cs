@@ -1,11 +1,10 @@
 ﻿namespace DexPlayer.Views.Pages;
 
-using DexPlayer.MVVM.Interfaces;
+using DesktopKit.MVVM.Interfaces;
 using DexPlayer.ViewModels.Views.Pages;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using System;
 
 internal sealed partial class LibraryTracksPage : Page, IViewModel<ILibraryTracksVM>
 {

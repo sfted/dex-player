@@ -1,6 +1,6 @@
 ﻿namespace DexPlayer.Views.Pages;
 
-using DexPlayer.MVVM.Interfaces;
+using DesktopKit.MVVM.Interfaces;
 using DexPlayer.ViewModels.Views.Pages;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.UI.Xaml.Controls;

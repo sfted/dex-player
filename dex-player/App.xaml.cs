@@ -1,4 +1,6 @@
-﻿using DesktopKit.Services;
+﻿namespace DexPlayer;
+
+using DesktopKit.Services;
 using DexPlayer.Services;
 using DexPlayer.Values;
 using DexPlayer.ViewModels.Views.Pages;
@@ -9,8 +11,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.UI.Xaml;
 using System;
 using System.Collections.Generic;
-
-namespace DexPlayer;
 
 public partial class App : Application
 {

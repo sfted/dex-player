@@ -5,7 +5,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:pages="using:DexPlayer.ViewModels.Views.Pages"
-    xmlns:values="using:DexPlayer.Values"
+    xmlns:values="using:DesktopKit.Values"
     d:DataContext="{d:DesignInstance Type=pages:ILibraryVM}"
     mc:Ignorable="d">
 

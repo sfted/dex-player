@@ -6,7 +6,7 @@
     xmlns:entities="using:DexPlayer.ViewModels.Entities"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:pages="using:DexPlayer.ViewModels.Views.Pages"
-    xmlns:values="using:DexPlayer.Values"
+    xmlns:values="using:DesktopKit.Values"
     xmlns:y="using:Yandex.Music.Api.Models.Artist"
     d:DataContext="{d:DesignInstance Type=pages:LibraryTracksVM}"
     mc:Ignorable="d">

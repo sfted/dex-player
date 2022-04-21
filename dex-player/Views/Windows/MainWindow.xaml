@@ -3,6 +3,7 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:kit="using:DesktopKit.Values"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:values="using:DexPlayer.Values"
     mc:Ignorable="d">
@@ -25,7 +26,7 @@
                 Background="{ThemeResource NavigationViewPaneBackground}"
                 BorderThickness="0"
                 Click="OnMenuToggleButtonClick"
-                Content="{x:Bind values:MaterialIcons.MENU}"
+                Content="{x:Bind kit:MaterialIcons.MENU}"
                 CornerRadius="0"
                 FontFamily="{StaticResource MaterialIconsFont}"
                 FontSize="20" />
@@ -36,7 +37,7 @@
                 Padding="0"
                 Background="{ThemeResource NavigationViewPaneBackground}"
                 BorderThickness="0"
-                Content="{x:Bind values:MaterialIcons.ARROW_BACK_IOS}"
+                Content="{x:Bind kit:MaterialIcons.ARROW_BACK_IOS}"
                 CornerRadius="0"
                 FontFamily="{StaticResource MaterialIconsFont}"
                 FontSize="14" />
@@ -47,7 +48,7 @@
                 Padding="0"
                 Background="{ThemeResource NavigationViewPaneBackground}"
                 BorderThickness="0"
-                Content="{x:Bind values:MaterialIcons.ARROW_FORWARD_IOS}"
+                Content="{x:Bind kit:MaterialIcons.ARROW_FORWARD_IOS}"
                 CornerRadius="0"
                 FontFamily="{StaticResource MaterialIconsFont}"
                 FontSize="14" />
@@ -113,7 +114,7 @@
                     Tag="{x:Bind values:Pages.HOME}">
                     <NavigationViewItem.Icon>
                         <FontIcon
-                            Glyph="{x:Bind values:MaterialIcons.HOME}"
+                            Glyph="{x:Bind kit:MaterialIcons.HOME}"
                             Style="{StaticResource MaterialFontIconStyle}" />
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
@@ -132,7 +133,7 @@
                     Tag="{x:Bind values:Pages.LIBRARY}">
                     <NavigationViewItem.Icon>
                         <FontIcon
-                            Glyph="{x:Bind values:MaterialIcons.LIBRARY_MUSIC}"
+                            Glyph="{x:Bind kit:MaterialIcons.LIBRARY_MUSIC}"
                             Style="{StaticResource MaterialFontIconStyle}" />
                     </NavigationViewItem.Icon>
 
@@ -144,7 +145,7 @@
                             Tag="{x:Bind values:Pages.LIBRARY_TRACKS}">
                             <NavigationViewItem.Icon>
                                 <FontIcon
-                                    Glyph="{x:Bind values:MaterialIcons.MUSIC_NOTE}"
+                                    Glyph="{x:Bind kit:MaterialIcons.MUSIC_NOTE}"
                                     Style="{StaticResource MaterialFontIconStyle}" />
                             </NavigationViewItem.Icon>
                         </NavigationViewItem>
@@ -200,7 +201,7 @@
                     FontSize="12">
                     <NavigationViewItem.Icon>
                         <FontIcon
-                            Glyph="{x:Bind values:MaterialIcons.PERSON}"
+                            Glyph="{x:Bind kit:MaterialIcons.PERSON}"
                             Style="{StaticResource MaterialFontIconStyle}" />
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
