@@ -135,6 +135,20 @@
                             Glyph="{x:Bind values:MaterialIcons.LIBRARY_MUSIC}"
                             Style="{StaticResource MaterialFontIconStyle}" />
                     </NavigationViewItem.Icon>
+
+                    <NavigationViewItem.MenuItems>
+                        <NavigationViewItem
+                            Content="Треки"
+                            FontFamily="{StaticResource ContentControlThemeFontFamily}"
+                            FontSize="12"
+                            Tag="{x:Bind values:Pages.LIBRARY_TRACKS}">
+                            <NavigationViewItem.Icon>
+                                <FontIcon
+                                    Glyph="{x:Bind values:MaterialIcons.MUSIC_NOTE}"
+                                    Style="{StaticResource MaterialFontIconStyle}" />
+                            </NavigationViewItem.Icon>
+                        </NavigationViewItem>
+                    </NavigationViewItem.MenuItems>
                 </NavigationViewItem>
                 <!--<NavigationViewItemSeparator />
                 <NavigationViewItem

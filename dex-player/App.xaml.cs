@@ -38,6 +38,7 @@ public partial class App : Application
 
         services.AddTransient<IMainWindowVM, MainWindowVM>();
         services.AddTransient<ILibraryVM, LibraryVM>();
+        services.AddTransient<ILibraryTracksVM, LibraryTracksVM>();
 
         return services.BuildServiceProvider();
     }

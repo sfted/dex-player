@@ -6,6 +6,8 @@ using DexPlayer.Views.UserControls;
 using Microsoft.UI.Xaml.Controls;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
 using System.Threading.Tasks;
 using Yandex.Music.Api;
 using Yandex.Music.Api.Common;
@@ -82,8 +84,12 @@ internal class YandexService : ViewModelBase, IYandexService
     public async Task<YLibraryTracks> GetLikedTracks() =>
         (await api.Library.GetLikedTracksAsync(storage)).Result;
 
-    public async Task<List<YTrack>> GetTracks(string[] ids) =>
-        (await api.Track.GetAsync(storage, ids)).Result;
+    public async Task<List<YTrack>> GetTracks(string[] ids)
+    {
+        var result = await api.Track.GetAsync(storage, ids);
+        var result2 = result.Result;
+        return result2;
+    }
 
     private async void ProceedLogin(LoginUserControl control)
     {

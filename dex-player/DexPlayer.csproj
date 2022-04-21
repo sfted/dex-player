@@ -59,10 +59,12 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Helpers\" />
+    <Page Update="Views\Pages\LibraryTracksPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Views\Pages\LibraryTracksPage.xaml">
+    <Page Update="MVVM\Converters.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>

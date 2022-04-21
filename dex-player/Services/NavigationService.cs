@@ -66,6 +66,7 @@ internal class NavigationService : INavigationService
         pageId switch
         {
             Pages.LIBRARY => typeof(LibraryPage),
+            Pages.LIBRARY_TRACKS => typeof(LibraryTracksPage),
             _ => typeof(NotFoundPage)
         };
 
