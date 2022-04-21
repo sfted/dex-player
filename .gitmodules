@@ -1,3 +1,6 @@
 [submodule "ymusic-api"]
 	path = ymusic-api
 	url = https://github.com/sfted/ymusic-api
+[submodule "desktop-kit"]
+	path = desktop-kit
+	url = https://github.com/sfted/desktop-kit
