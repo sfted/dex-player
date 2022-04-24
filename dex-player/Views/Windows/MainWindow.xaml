@@ -37,6 +37,7 @@
                 Padding="0"
                 Background="{ThemeResource NavigationViewPaneBackground}"
                 BorderThickness="0"
+                Command="{x:Bind ViewModel.GoBackCommand}"
                 Content="{x:Bind kit:MaterialIcons.ARROW_BACK_IOS}"
                 CornerRadius="0"
                 FontFamily="{StaticResource MaterialIconsFont}"
@@ -48,6 +49,7 @@
                 Padding="0"
                 Background="{ThemeResource NavigationViewPaneBackground}"
                 BorderThickness="0"
+                Command="{x:Bind ViewModel.GoForwardCommand}"
                 Content="{x:Bind kit:MaterialIcons.ARROW_FORWARD_IOS}"
                 CornerRadius="0"
                 FontFamily="{StaticResource MaterialIconsFont}"
@@ -76,10 +78,17 @@
                             <SolidColorBrush
                                 x:Key="ButtonBackgroundPressed"
                                 Color="#181818" />
+                            <SolidColorBrush
+                                x:Key="ButtonBackgroundDisabled"
+                                Color="#181818" />
+
 
                             <SolidColorBrush
                                 x:Key="ButtonForeground"
                                 Color="#888" />
+                            <SolidColorBrush
+                                x:Key="ButtonForegroundDisabled"
+                                Color="#444" />
                             <SolidColorBrush
                                 x:Key="ButtonForegroundPointerOver"
                                 Color="#fff" />

@@ -9,6 +9,9 @@ internal interface IMainWindowVM
     public IYandexService YandexService { get; }
     public INavigationService NavigationService { get; }
     public string Username { get; }
+    
+    public Command GoBackCommand { get; }
+    public Command GoForwardCommand { get; }
 }
 
 internal class MainWindowVM : ViewModelBase, IMainWindowVM
@@ -18,7 +21,11 @@ internal class MainWindowVM : ViewModelBase, IMainWindowVM
         YandexService = yandexService;
         NavigationService = navigationService;
 
+        GoBackCommand = new(NavigationService.NavigateBack, CanNavigateBack);
+        GoForwardCommand = new(NavigationService.NavigateForward, CanNavigateForward);
+
         YandexService.AccountInfoLoaded += OnAccountInfoLoaded;
+        NavigationService.Navigated += OnNavigationNavigated;
     }
 
     private string username = string.Empty;
@@ -32,6 +39,18 @@ internal class MainWindowVM : ViewModelBase, IMainWindowVM
         set => SetProperty(ref username, value);
     }
 
+    public Command GoBackCommand { get; private set; }
+    public Command GoForwardCommand { get; private set; }
+
     private void OnAccountInfoLoaded() =>
         Username = YandexService.Account.DisplayName;
+
+    private void OnNavigationNavigated(System.Type page, object parameter)
+    {
+        GoBackCommand.RaiseCanExecuteChanged();
+        GoForwardCommand.RaiseCanExecuteChanged();
+    }
+
+    private bool CanNavigateBack(object obj) => NavigationService.CanNavigateBack();
+    private bool CanNavigateForward(object obj) => NavigationService.CanNavigateForward();
 }
